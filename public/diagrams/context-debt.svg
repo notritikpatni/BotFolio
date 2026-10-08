@@ -39,12 +39,12 @@
 
   <g transform="translate(64 484)">
     <text x="0" y="0" fill="#8d9bad" font-family="ui-monospace,monospace" font-size="15" letter-spacing="2">ONE CALL, DIFFERENT WEIGHT</text>
-    <text x="0" y="48" fill="#d9e7f2" font-size="18">fresh session</text>
-    <rect x="170" y="25" width="88" height="24" rx="6" fill="#76d7b0"/>
-    <text x="278" y="44" fill="#91a3b5" font-size="17">~9.5K tokens</text>
-    <text x="570" y="48" fill="#f4c5a3" font-size="18">unretired session</text>
-    <rect x="790" y="25" width="250" height="24" rx="6" fill="url(#orange)"/>
-    <text x="1055" y="44" fill="#ffc28e" font-size="17">105K–211K</text>
+    <text x="0" y="20" fill="#d9e7f2" font-size="18">fresh session</text>
+    <rect x="170" y="28" width="88" height="24" rx="6" fill="#76d7b0"/>
+    <text x="278" y="48" fill="#91a3b5" font-size="17">~9.5K tokens</text>
+    <text x="570" y="20" fill="#f4c5a3" font-size="18">unretired session</text>
+    <rect x="790" y="28" width="250" height="24" rx="6" fill="url(#orange)"/>
+    <text x="1055" y="48" fill="#ffc28e" font-size="17">105K–211K</text>
     <text x="0" y="96" fill="#65758a" font-family="ui-monospace,monospace" font-size="15">8,912 calls  ·  524 sessions  ·  6 never retired</text>
   </g>
 </g>
