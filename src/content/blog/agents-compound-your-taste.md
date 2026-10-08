@@ -24,12 +24,6 @@ Nobody did anything wrong here. That's the point.
 
 ## Ambiguity is a primitive
 
-<picture>
-  <img alt="The agent compounds clear primitives into better output, and ambiguous primitives into hidden complexity" src="/diagrams/taste-compounds.svg">
-</picture>
-
-*Diagram drawn with [Koboyo](https://koboyo.com), then art-directed for this essay.*
-
 The agent is faithful, not judgmental. The failure mode isn't bugs — it's unpriced ambiguity that compounds quietly, inside code that works.
 
 ## When context becomes debt
@@ -60,11 +54,19 @@ Now scale this to how we build systems with agents. Say we don't fix the badge c
 
 That's the mechanism: the more we write clear code for humans, the more agents find it easier to consume — that's what they're good at. If you make a system with bad primitives, agents will make it worse exponentially. With good primitives, they'll make it better exponentially. And what counts as good or bad primitives — that's your taste.
 
-Most agents will not stop at the boundary where your design is ambiguous. They will choose a plausible interpretation and keep building. The result will most likely look like your intent. The process, I don't think so. And sooner or later it starts making things worse, because the ambiguity is now part of the system.
+Most agents will not stop at the boundary where your design is ambiguous. They will choose a plausible interpretation and keep building. The result will most likely look like your intent. The process, I don't think so — because the ambiguity is now part of the system.
 
-There's a second-order problem. Agents make things look clean and hide the complexity until you actually decide to look for it. They're optimized to produce locally acceptable output: defensive enough to pass the checks in front of them, not necessarily simple enough to preserve the system's design. The complexity stays hidden — until you touch the code, or someday you opt to do something simple and it can't, because the earlier outputs were hanging by thin threads. From the front it looked complete. Looking at the code, you can tell it's all hanging by threads.
+There's a second-order problem. Agents make things look clean and hide the complexity until you actually decide to look for it. They're optimized to produce locally acceptable output: defensive enough to pass the checks in front of them, not necessarily simple enough to preserve the system's design. The complexity stays hidden — until you touch the code, or someday you opt to do something simple and it can't, because the earlier outputs were hanging by thin threads.
 
 And then you're exactly where old tech debt put human-driven systems: forced to add one more thin thread, because business wanted it faster.
+
+<picture>
+  <img alt="The agent compounds clear primitives into better output, and ambiguous primitives into hidden complexity" src="/diagrams/taste-compounds.svg">
+</picture>
+
+*The compounding goes both ways — and the direction is chosen before the agent starts.*
+
+*Diagram drawn with [Koboyo](https://koboyo.com), then art-directed for this essay.*
 
 ## Design before delegation
 
