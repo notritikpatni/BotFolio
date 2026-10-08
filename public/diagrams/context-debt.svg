@@ -44,7 +44,7 @@
     <text x="278" y="44" fill="#91a3b5" font-size="17">~9.5K tokens</text>
     <text x="570" y="48" fill="#f4c5a3" font-size="18">unretired session</text>
     <rect x="790" y="25" width="250" height="24" rx="6" fill="url(#orange)"/>
-    <text x="1055" y="44" text-anchor="end" fill="#ffc28e" font-size="17">105K–211K</text>
+    <text x="1055" y="44" fill="#ffc28e" font-size="17">105K–211K</text>
     <text x="0" y="96" fill="#65758a" font-family="ui-monospace,monospace" font-size="15">8,912 calls  ·  524 sessions  ·  6 never retired</text>
   </g>
 </g>
