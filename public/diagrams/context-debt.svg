@@ -1,3 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
-<title id="title">Context debt multiplies token consumption</title><desc id="desc">Six unretired sessions consumed 654 million of 865 million input tokens.</desc>
-<defs><linearGradient id="bar" x1="0" x2="1"><stop stop-color="#ff7a7a"/><stop offset="1" stop-color="#ffb86b"/></linearGradient></defs><rect width="1200" height="520" rx="24" fill="#111827"/><g font-family="Inter,Arial,sans-serif"><text x="60" y="60" fill="#9ca3af" font-family="ui-monospace,monospace" font-size="18" letter-spacing="3">CONTEXT DEBT, VISUALISED</text><text x="60" y="125" fill="#f9fafb" font-size="34" font-weight="600">Six sessions carried 76% of the load.</text><text x="60" y="165" fill="#9ca3af" font-size="20">The system was green. The context was not.</text><g transform="translate(60 225)"><text x="0" y="0" fill="#f9fafb" font-size="21">865M total input tokens</text><rect x="0" y="28" width="1030" height="62" rx="12" fill="#263244"/><rect x="0" y="28" width="782" height="62" rx="12" fill="url(#bar)"/><text x="25" y="68" fill="#111827" font-size="23" font-weight="700">654M · six unretired sessions</text><text x="805" y="68" fill="#d1d5db" font-size="20">211M rest</text><text x="0" y="145" fill="#ffb86b" font-size="28" font-weight="600">76%</text><text x="110" y="145" fill="#d1d5db" font-size="22">of all input consumption</text><text x="0" y="202" fill="#9ca3af" font-size="20">Fresh session</text><rect x="180" y="180" width="105" height="30" rx="6" fill="#75d6b0"/><text x="310" y="204" fill="#9ca3af" font-size="18">~9.5K tokens / call</text><text x="0" y="258" fill="#9ca3af" font-size="20">Whale session</text><rect x="180" y="236" width="650" height="30" rx="6" fill="url(#bar)"/><text x="855" y="260" fill="#ffb86b" font-size="18">105K–211K / call</text></g><text x="60" y="470" fill="#6b7280" font-size="16">8,912 calls · 524 sessions · 21 days</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+<title id="title">Six sessions carried 76 percent of token consumption</title>
+<desc id="desc">A visual comparison shows six unretired whale sessions consuming 654 million of 865 million input tokens, while 518 other sessions consumed 211 million.</desc>
+<defs>
+  <linearGradient id="orange" x1="0" x2="1"><stop stop-color="#ff7373"/><stop offset="1" stop-color="#ffc06f"/></linearGradient>
+  <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="2.5" fill="#91a3b5"/></pattern>
+  <filter id="glow"><feGaussianBlur stdDeviation="16" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1200" height="620" rx="28" fill="#0d1420"/>
+<g font-family="Inter,Arial,sans-serif">
+  <text x="64" y="58" fill="#8d9bad" font-family="ui-monospace,monospace" font-size="15" letter-spacing="4">CONTEXT DEBT / 21 DAYS</text>
+  <text x="64" y="112" fill="#f8fafc" font-size="40" font-weight="650" letter-spacing="-1">Six sessions carried 76% of the load.</text>
+  <text x="64" y="142" fill="#8d9bad" font-size="18">The system was green. The context was not.</text>
+
+  <g transform="translate(64 188)">
+    <rect width="700" height="250" rx="18" fill="#211b1c" stroke="#704247"/>
+    <text x="28" y="36" fill="#ffc28e" font-family="ui-monospace,monospace" font-size="15" letter-spacing="2">SIX UNRETIRED SESSIONS</text>
+    <text x="28" y="102" fill="url(#orange)" font-size="64" font-weight="750">654M</text>
+    <text x="30" y="132" fill="#f4c5a3" font-size="18">input tokens</text>
+    <text x="30" y="176" fill="#ff9c83" font-size="32" font-weight="650">76%</text>
+    <text x="132" y="176" fill="#d4a99c" font-size="18">of the entire input bill</text>
+    <g transform="translate(405 62)">
+      <circle cx="52" cy="42" r="44" fill="#593331" opacity=".75" filter="url(#glow)"/>
+      <image href="/diagrams/koboyo-whale.svg" x="2" y="4" width="150" height="88"/>
+      <image href="/diagrams/koboyo-whale.svg" x="110" y="30" width="100" height="58" opacity=".7"/>
+      <image href="/diagrams/koboyo-whale.svg" x="182" y="-5" width="80" height="47" opacity=".45"/>
+      <text x="5" y="132" fill="#ffb86b" font-family="ui-monospace,monospace" font-size="15">THE WHALES</text>
+    </g>
+  </g>
+
+  <g transform="translate(790 188)">
+    <rect width="346" height="250" rx="18" fill="#172231" stroke="#304a63"/>
+    <text x="28" y="36" fill="#a9c4da" font-family="ui-monospace,monospace" font-size="15" letter-spacing="2">THE OTHER 518</text>
+    <text x="28" y="102" fill="#d9e7f2" font-size="64" font-weight="750">211M</text>
+    <text x="30" y="132" fill="#91a3b5" font-size="18">input tokens</text>
+    <rect x="28" y="160" width="270" height="48" rx="8" fill="url(#dots)" opacity=".8"/>
+    <text x="28" y="232" fill="#91a3b5" font-family="ui-monospace,monospace" font-size="15">98.9% of sessions</text>
+  </g>
+
+  <g transform="translate(64 484)">
+    <text x="0" y="0" fill="#8d9bad" font-family="ui-monospace,monospace" font-size="15" letter-spacing="2">ONE CALL, DIFFERENT WEIGHT</text>
+    <text x="0" y="48" fill="#d9e7f2" font-size="18">fresh session</text>
+    <rect x="170" y="25" width="88" height="24" rx="6" fill="#76d7b0"/>
+    <text x="278" y="44" fill="#91a3b5" font-size="17">~9.5K tokens</text>
+    <text x="570" y="48" fill="#f4c5a3" font-size="18">unretired session</text>
+    <rect x="790" y="25" width="250" height="24" rx="6" fill="url(#orange)"/>
+    <text x="1055" y="44" text-anchor="end" fill="#ffc28e" font-size="17">105K–211K</text>
+    <text x="0" y="96" fill="#65758a" font-family="ui-monospace,monospace" font-size="15">8,912 calls  ·  524 sessions  ·  6 never retired</text>
+  </g>
+</g>
+</svg>
