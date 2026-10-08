@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
 <title id="title">Agents compound your taste in both directions</title>
 <desc id="desc">A split editorial illustration: clear intent becomes a clean structure, while ambiguity becomes a tangled system.</desc>
 <defs>
@@ -8,8 +8,8 @@
   <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto"><path d="M0 0 11 4 0 8Z" fill="#9fe8bd"/></marker>
   <marker id="arrowRed" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto"><path d="M0 0 11 4 0 8Z" fill="#ff9c83"/></marker>
 </defs>
-<rect width="1200" height="620" rx="28" fill="#0d1420"/>
-<path d="M600 148V570" stroke="#273446" stroke-width="2" stroke-dasharray="6 12"/>
+<rect width="1200" height="680" rx="28" fill="#0d1420"/>
+<path d="M600 148V610" stroke="#273446" stroke-width="2" stroke-dasharray="6 12"/>
 <g font-family="Inter,Arial,sans-serif">
   <text x="64" y="58" fill="#8d9bad" font-family="ui-monospace,monospace" font-size="15" letter-spacing="4">THE DIRECTION OF COMPOUNDING</text>
   <text x="64" y="112" fill="#f8fafc" font-size="40" font-weight="650" letter-spacing="-1">The agent amplifies the foundation.</text>
@@ -53,7 +53,7 @@
     <text x="126" y="390" fill="#ff9c83" font-size="17">complexity that looks complete</text>
   </g>
 
-  <text x="64" y="570" fill="#65758a" font-family="ui-monospace,monospace" font-size="15">BRING TASTE. THE AGENT WILL COMPOUND IT.</text>
-  <text x="1136" y="570" text-anchor="end" fill="#65758a" font-family="ui-monospace,monospace" font-size="15">KOBOYO ICONS / ART-DIRECTED</text>
+  <text x="64" y="640" fill="#65758a" font-family="ui-monospace,monospace" font-size="15">BRING TASTE. THE AGENT WILL COMPOUND IT.</text>
+  <text x="1136" y="640" text-anchor="end" fill="#65758a" font-family="ui-monospace,monospace" font-size="15">KOBOYO ICONS / ART-DIRECTED</text>
 </g>
 </svg>
