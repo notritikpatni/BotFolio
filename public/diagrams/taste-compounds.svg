@@ -1,51 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
-<title id="title">Taste compounds in both directions</title>
-<desc id="desc">Two diverging paths show clear intent becoming reliable agent output and ambiguous intent becoming hidden complexity.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+<title id="title">Agents compound your taste in both directions</title>
+<desc id="desc">A split editorial illustration: clear intent becomes a clean structure, while ambiguity becomes a tangled system.</desc>
 <defs>
-  <linearGradient id="mint" x1="0" x2="1"><stop stop-color="#d7f78f"/><stop offset="1" stop-color="#48d7b0"/></linearGradient>
-  <linearGradient id="coral" x1="0" x2="1"><stop stop-color="#ffd28a"/><stop offset="1" stop-color="#ff7272"/></linearGradient>
-  <filter id="glowMint"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  <filter id="glowCoral"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  <marker id="arrowMint" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto"><path d="M0 0 11 4 0 8Z" fill="#8ce7c1"/></marker>
-  <marker id="arrowCoral" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto"><path d="M0 0 11 4 0 8Z" fill="#ff9d82"/></marker>
+  <linearGradient id="green" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#7dd3a8"/><stop offset="1" stop-color="#e1f59c"/></linearGradient>
+  <linearGradient id="red" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#ff7d70"/><stop offset="1" stop-color="#ffd28a"/></linearGradient>
+  <filter id="soft"><feGaussianBlur stdDeviation="14"/></filter>
+  <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto"><path d="M0 0 11 4 0 8Z" fill="#9fe8bd"/></marker>
+  <marker id="arrowRed" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto"><path d="M0 0 11 4 0 8Z" fill="#ff9c83"/></marker>
 </defs>
-<rect width="1200" height="680" rx="28" fill="#0d1420"/>
-<path d="M600 188V612" stroke="#263448" stroke-width="2" stroke-dasharray="5 12"/>
+<rect width="1200" height="620" rx="28" fill="#0d1420"/>
+<path d="M600 148V570" stroke="#273446" stroke-width="2" stroke-dasharray="6 12"/>
 <g font-family="Inter,Arial,sans-serif">
-  <text x="64" y="62" fill="#8d9bad" font-family="ui-monospace,monospace" font-size="16" letter-spacing="4">THE DIRECTION OF COMPOUNDING</text>
-  <text x="64" y="122" fill="#f8fafc" font-size="42" font-weight="650" letter-spacing="-1">The agent amplifies the foundation.</text>
-  <text x="64" y="158" fill="#8d9bad" font-size="20">Same tool. Different primitives. Different future.</text>
-  <text x="72" y="218" fill="#b9ef9b" font-family="ui-monospace,monospace" font-size="16" letter-spacing="2">01 / CLARITY</text>
-  <text x="628" y="218" fill="#ffc28e" font-family="ui-monospace,monospace" font-size="16" letter-spacing="2">02 / AMBIGUITY</text>
-  <g transform="translate(72 270)">
-    <circle cx="40" cy="40" r="32" fill="#1d3d35" stroke="#8ce7c1" stroke-width="2" filter="url(#glowMint)"/>
-    <image href="/diagrams/koboyo-gate.svg" x="18" y="18" width="44" height="44" opacity=".95"/>
-    <text x="92" y="34" fill="#f8fafc" font-size="28" font-weight="600">clear intent</text>
-    <text x="92" y="64" fill="#91a3b5" font-size="17">decisions made before delegation</text>
-    <path d="M40 96 C40 160 120 150 190 184" fill="none" stroke="#8ce7c1" stroke-width="4" marker-end="url(#arrowMint)"/>
-    <circle cx="210" cy="194" r="11" fill="#b9ef9b"/>
-    <text x="240" y="188" fill="#f8fafc" font-size="25" font-weight="600">mechanical gates</text>
-    <text x="240" y="218" fill="#91a3b5" font-size="17">the system can enforce taste</text>
-    <path d="M220 230 C260 280 180 290 132 322" fill="none" stroke="#8ce7c1" stroke-width="4" marker-end="url(#arrowMint)"/>
-    <circle cx="112" cy="340" r="34" fill="#193e36" stroke="#8ce7c1" stroke-width="2" filter="url(#glowMint)"/>
-    <path d="M95 340h34M112 323v34" stroke="#b9ef9b" stroke-width="4"/>
-    <text x="168" y="336" fill="url(#mint)" font-size="30" font-weight="700">reliable output</text>
-    <text x="168" y="366" fill="#91a3b5" font-size="17">clarity compounds →</text>
+  <text x="64" y="58" fill="#8d9bad" font-family="ui-monospace,monospace" font-size="15" letter-spacing="4">THE DIRECTION OF COMPOUNDING</text>
+  <text x="64" y="112" fill="#f8fafc" font-size="40" font-weight="650" letter-spacing="-1">The agent amplifies the foundation.</text>
+  <text x="64" y="142" fill="#8d9bad" font-size="18">Good primitives become leverage. Bad primitives become atmosphere.</text>
+
+  <text x="72" y="190" fill="#b9ef9b" font-family="ui-monospace,monospace" font-size="15" letter-spacing="2">CLEAR INTENT</text>
+  <text x="628" y="190" fill="#ffc28e" font-family="ui-monospace,monospace" font-size="15" letter-spacing="2">AMBIGUOUS INTENT</text>
+
+  <g transform="translate(72 222)">
+    <circle cx="46" cy="46" r="42" fill="#1b3a32" stroke="#9fe8bd" stroke-width="2"/>
+    <image href="/diagrams/koboyo-gate.svg" x="21" y="21" width="50" height="50"/>
+    <text x="108" y="39" fill="#f8fafc" font-size="25" font-weight="600">taste, made explicit</text>
+    <text x="108" y="69" fill="#8d9bad" font-size="17">decisions the system can keep</text>
+    <path d="M46 106 C46 145 98 152 150 177" fill="none" stroke="#9fe8bd" stroke-width="4" marker-end="url(#arrowGreen)"/>
+    <g transform="translate(126 164)">
+      <rect x="0" y="70" width="210" height="46" rx="8" fill="#193c34" stroke="#5bbd92"/>
+      <rect x="26" y="22" width="210" height="46" rx="8" fill="#225343" stroke="#72d39f"/>
+      <rect x="52" y="-26" width="210" height="46" rx="8" fill="#2c6a51" stroke="#9fe8bd"/>
+      <text x="70" y="3" fill="#10231e" font-family="ui-monospace,monospace" font-size="16" font-weight="700">intent</text>
+      <text x="44" y="52" fill="#d8f5e3" font-family="ui-monospace,monospace" font-size="16">constraints</text>
+      <text x="18" y="99" fill="#b9ef9b" font-family="ui-monospace,monospace" font-size="16">reliable output</text>
+    </g>
+    <text x="126" y="360" fill="#8d9bad" font-size="17">simple enough to build on</text>
   </g>
-  <g transform="translate(628 270)">
-    <circle cx="40" cy="40" r="32" fill="#4a3025" stroke="#ff9d82" stroke-width="2" filter="url(#glowCoral)"/>
-    <image href="/diagrams/koboyo-price-tag.svg" x="18" y="18" width="44" height="44" opacity=".95"/>
-    <text x="92" y="34" fill="#f8fafc" font-size="28" font-weight="600">ambiguous intent</text>
-    <text x="92" y="64" fill="#91a3b5" font-size="17">the decision is still unpriced</text>
-    <path d="M40 96 C40 160 120 150 190 184" fill="none" stroke="#ff9d82" stroke-width="4" marker-end="url(#arrowCoral)"/>
-    <circle cx="210" cy="194" r="11" fill="#ffc28e"/>
-    <text x="240" y="188" fill="#f8fafc" font-size="25" font-weight="600">plausible patches</text>
-    <text x="240" y="218" fill="#91a3b5" font-size="17">the agent keeps building</text>
-    <path d="M220 230 C260 280 180 290 132 322" fill="none" stroke="#ff9d82" stroke-width="4" marker-end="url(#arrowCoral)"/>
-    <circle cx="112" cy="340" r="34" fill="#49302a" stroke="#ff9d82" stroke-width="2" filter="url(#glowCoral)"/>
-    <path d="M94 333l36 14M130 333l-36 14" stroke="#ffc28e" stroke-width="4"/>
-    <text x="168" y="336" fill="url(#coral)" font-size="30" font-weight="700">hidden complexity</text>
-    <text x="168" y="366" fill="#91a3b5" font-size="17">ambiguity compounds →</text>
+
+  <g transform="translate(628 222)">
+    <circle cx="46" cy="46" r="42" fill="#4a3028" stroke="#ff9c83" stroke-width="2"/>
+    <image href="/diagrams/koboyo-price-tag.svg" x="24" y="20" width="45" height="45"/>
+    <text x="108" y="39" fill="#f8fafc" font-size="25" font-weight="600">taste, left implicit</text>
+    <text x="108" y="69" fill="#8d9bad" font-size="17">decisions the system has to guess</text>
+    <path d="M46 106 C46 145 98 152 150 177" fill="none" stroke="#ff9c83" stroke-width="4" marker-end="url(#arrowRed)"/>
+    <g transform="translate(126 164)" fill="none" stroke-linecap="round">
+      <path d="M20 10 C120 110 70 15 238 98 S70 80 250 12" stroke="#ff9c83" stroke-width="5"/>
+      <path d="M0 62 C100 -18 78 116 246 42 S105 104 258 80" stroke="#ffc28e" stroke-width="4"/>
+      <path d="M40 112 C95 5 142 124 218 28 S150 70 270 112" stroke="#ff7272" stroke-width="4"/>
+      <circle cx="64" cy="76" r="9" fill="#ff9c83" stroke="none"/>
+      <circle cx="196" cy="50" r="9" fill="#ffc28e" stroke="none"/>
+      <circle cx="232" cy="102" r="9" fill="#ff7272" stroke="none"/>
+    </g>
+    <text x="126" y="360" fill="#ffc28e" font-size="25" font-weight="600">plausible patches</text>
+    <text x="126" y="390" fill="#ff9c83" font-size="17">complexity that looks complete</text>
   </g>
+
+  <text x="64" y="570" fill="#65758a" font-family="ui-monospace,monospace" font-size="15">BRING TASTE. THE AGENT WILL COMPOUND IT.</text>
+  <text x="1136" y="570" text-anchor="end" fill="#65758a" font-family="ui-monospace,monospace" font-size="15">KOBOYO ICONS / ART-DIRECTED</text>
 </g>
 </svg>
