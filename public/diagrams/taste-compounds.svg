@@ -26,11 +26,11 @@
     <circle cx="210" cy="194" r="11" fill="#b9ef9b"/>
     <text x="240" y="188" fill="#f8fafc" font-size="25" font-weight="600">mechanical gates</text>
     <text x="240" y="218" fill="#91a3b5" font-size="17">the system can enforce taste</text>
-    <path d="M220 230 C260 300 180 320 132 372" fill="none" stroke="#8ce7c1" stroke-width="4" marker-end="url(#arrowMint)"/>
-    <circle cx="112" cy="390" r="34" fill="#193e36" stroke="#8ce7c1" stroke-width="2" filter="url(#glowMint)"/>
-    <path d="M95 390h34M112 373v34" stroke="#b9ef9b" stroke-width="4"/>
-    <text x="168" y="386" fill="url(#mint)" font-size="30" font-weight="700">reliable output</text>
-    <text x="168" y="416" fill="#91a3b5" font-size="17">clarity compounds →</text>
+    <path d="M220 230 C260 280 180 290 132 322" fill="none" stroke="#8ce7c1" stroke-width="4" marker-end="url(#arrowMint)"/>
+    <circle cx="112" cy="340" r="34" fill="#193e36" stroke="#8ce7c1" stroke-width="2" filter="url(#glowMint)"/>
+    <path d="M95 340h34M112 323v34" stroke="#b9ef9b" stroke-width="4"/>
+    <text x="168" y="336" fill="url(#mint)" font-size="30" font-weight="700">reliable output</text>
+    <text x="168" y="366" fill="#91a3b5" font-size="17">clarity compounds →</text>
   </g>
   <g transform="translate(628 270)">
     <circle cx="40" cy="40" r="32" fill="#4a3025" stroke="#ff9d82" stroke-width="2" filter="url(#glowCoral)"/>
@@ -41,11 +41,11 @@
     <circle cx="210" cy="194" r="11" fill="#ffc28e"/>
     <text x="240" y="188" fill="#f8fafc" font-size="25" font-weight="600">plausible patches</text>
     <text x="240" y="218" fill="#91a3b5" font-size="17">the agent keeps building</text>
-    <path d="M220 230 C260 300 180 320 132 372" fill="none" stroke="#ff9d82" stroke-width="4" marker-end="url(#arrowCoral)"/>
-    <circle cx="112" cy="390" r="34" fill="#49302a" stroke="#ff9d82" stroke-width="2" filter="url(#glowCoral)"/>
-    <path d="M94 383l36 14M130 383l-36 14" stroke="#ffc28e" stroke-width="4"/>
-    <text x="168" y="386" fill="url(#coral)" font-size="30" font-weight="700">hidden complexity</text>
-    <text x="168" y="416" fill="#91a3b5" font-size="17">ambiguity compounds →</text>
+    <path d="M220 230 C260 280 180 290 132 322" fill="none" stroke="#ff9d82" stroke-width="4" marker-end="url(#arrowCoral)"/>
+    <circle cx="112" cy="340" r="34" fill="#49302a" stroke="#ff9d82" stroke-width="2" filter="url(#glowCoral)"/>
+    <path d="M94 333l36 14M130 333l-36 14" stroke="#ffc28e" stroke-width="4"/>
+    <text x="168" y="336" fill="url(#coral)" font-size="30" font-weight="700">hidden complexity</text>
+    <text x="168" y="366" fill="#91a3b5" font-size="17">ambiguity compounds →</text>
   </g>
   <text x="64" y="636" fill="#65758a" font-family="ui-monospace,monospace" font-size="15">TASTE IS THE INPUT THE SYSTEM CANNOT INVENT FOR YOU.</text>
   <text x="1136" y="636" text-anchor="end" fill="#65758a" font-family="ui-monospace,monospace" font-size="15">RITIK PATNI / 2026</text>
