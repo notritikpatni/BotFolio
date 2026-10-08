@@ -24,8 +24,6 @@ Nobody did anything wrong here. That's the point.
 
 ## Ambiguity is a primitive
 
-<img class="section-icon" alt="Koboyo price-tag icon" src="/diagrams/koboyo-price-tag.svg" width="56" height="56" loading="lazy">
-
 <picture>
   <img alt="The agent compounds clear primitives into better output, and ambiguous primitives into hidden complexity" src="/diagrams/taste-compounds.svg">
 </picture>
@@ -35,8 +33,6 @@ Nobody did anything wrong here. That's the point.
 The agent is faithful, not judgmental. The failure mode isn't bugs — it's unpriced ambiguity that compounds quietly, inside code that works.
 
 ## When context becomes debt
-
-<img class="section-icon" alt="Koboyo thread-spool icon" src="/diagrams/koboyo-spool-thread.svg" width="56" height="56" loading="lazy">
 
 Here's the same failure shape, at a bigger blast radius. In my own AI assistant setup, I was looking at token churn and noticed it was noticeably higher than it should be. I started digging. The system has watchdog governance alerts and a whole memory-management setup — and everything produced the right results most of the time. But the tokens were higher, until I noticed that per-thread pruning had been turned off for some reason, and there were whale sessions that had never been pruned. They got compacted, but still carried the burden of roughly ten to twenty times extra tokens on every single call.
 
@@ -71,8 +67,6 @@ There's a second-order problem. Agents make things look clean and hide the compl
 And then you're exactly where old tech debt put human-driven systems: forced to add one more thin thread, because business wanted it faster.
 
 ## Design before delegation
-
-<img class="section-icon" alt="Koboyo gate icon" src="/diagrams/koboyo-gate.svg" width="56" height="56" loading="lazy">
 
 All of this could have been solved by stressing a little on the design, on the intent, on the taste — before it went too far. Because agents are good at flattery. They will make you believe that whatever you're building is state of the art and going to work when you have 10 million users.
 
