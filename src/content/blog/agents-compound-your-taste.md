@@ -22,19 +22,43 @@ We had a badge component in our design system. It was made by designers, and it 
 
 Nobody did anything wrong here. That's the point.
 
+## Ambiguity is a primitive
+
+<img alt="Koboyo price-tag icon" src="/diagrams/koboyo-price-tag.svg" width="56" height="56" loading="lazy">
+
+<picture>
+  <img alt="The agent compounds clear primitives into better output, and ambiguous primitives into hidden complexity" src="/diagrams/taste-compounds.svg">
+</picture>
+
+*Diagram drawn with [Koboyo](https://koboyo.com), then art-directed for this essay.*
+
 The agent is faithful, not judgmental. The failure mode isn't bugs — it's unpriced ambiguity that compounds quietly, inside code that works.
+
+## When context becomes debt
+
+<img alt="Koboyo thread-spool icon" src="/diagrams/koboyo-spool-thread.svg" width="56" height="56" loading="lazy">
 
 Here's the same failure shape, at a bigger blast radius. In my own AI assistant setup, I was looking at token churn and noticed it was noticeably higher than it should be. I started digging. The system has watchdog governance alerts and a whole memory-management setup — and everything produced the right results most of the time. But the tokens were higher, until I noticed that per-thread pruning had been turned off for some reason, and there were whale sessions that had never been pruned. They got compacted, but still carried the burden of roughly ten to twenty times extra tokens on every single call.
 
 The measured version, from the logs: over 21 days, 8,912 API calls across 524 sessions consumed 865 million input tokens. Six sessions — aged 22 to 51 days, never retired — accounted for 654 million of them. Seventy-six percent of the system's entire input consumption. A fresh session's prompt weighs about 9,500 tokens; these carried 105,000 to 211,000 per call. Eleven to twenty-two times what a simple message actually needed, on every call, for weeks.
 
+<picture>
+  <img alt="Six unretired sessions accounted for 654 million of 865 million input tokens over 21 days" src="/diagrams/context-debt.svg">
+</picture>
+
+*The figures are from the anonymized logs described below.*
+
 And here's the part that matters: compaction *was* running. Pruning config *existed*. Every dashboard was green, because the system was doing exactly what it was configured to do. The agent operating inside that system treats the config as ground truth — it faithfully optimized everything it was asked to, and nothing asked it to question the configuration itself. The existing monitoring and prompts did not expose the design failure.
 
 This was a taste issue.
 
+## Good context compounds too
+
 What fixed it was one config flip and a shorter prune window. But the payoff wasn't the tokens. Proof the context was the problem: a reminders feature I'd built at the start had never worked — the crons kept reminding me from wherever I happened to be creating them. Once the old session was pruned, the agent had to look at the actual config to find the right place. And it found it, and delivered the reminders there, first try. Clean context in, right behavior out. It compounds in that direction too. The session history had made it complicated.
 
 The agent wasn't broken. The context was. The system carried its own accident so faithfully that neither of us could see the original design anymore.
+
+## The hidden tax of plausible output
 
 Now scale this to how we build systems with agents. Say we don't fix the badge component. At every new request it just keeps piling on the props, and we won't be able to see it — because visually, things look alright. But at the end, it slows the agents down too. What is simple for us is also simple for agents, and vice versa. That's not a slogan: agents are trained on human-written code, so human legibility is their native format. When human legibility breaks down, their ground truth degrades with it.
 
@@ -46,11 +70,21 @@ There's a second-order problem. Agents make things look clean and hide the compl
 
 And then you're exactly where old tech debt put human-driven systems: forced to add one more thin thread, because business wanted it faster.
 
+## Design before delegation
+
+<img alt="Koboyo gate icon" src="/diagrams/koboyo-gate.svg" width="56" height="56" loading="lazy">
+
 All of this could have been solved by stressing a little on the design, on the intent, on the taste — before it went too far. Because agents are good at flattery. They will make you believe that whatever you're building is state of the art and going to work when you have 10 million users.
 
 Here's what owning it actually looked like for the badge. I refactored it — from five or six props down to two: `type` and `variant`. Better types that yell at you when you use the wrong combination and won't ship even if the agent allows it, because it will not build. Thanks to the engineers who built TypeScript and build systems.
 
 Because what I was looking for was mechanical gates — gates that stop you irrespective of your model. Then you're forced to rethink the component, and most likely you'll figure out the right approach at that time.
+
+<picture>
+  <img alt="Mechanical gates turn intent into enforced types and reject invalid combinations before shipping" src="/diagrams/mechanical-gate.svg">
+</picture>
+
+*The gate does not need better taste. It preserves yours.*
 
 It's still under debate. The person who developed the badge developed ten or fifteen more components the same ambiguous way, and I'm looking at bringing the system back to zero, because the foundation is wrong. They want to move fast — they've been told, convincingly, that what they have is state of the art.
 
